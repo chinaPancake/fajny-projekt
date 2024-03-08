@@ -10,3 +10,8 @@ fn world() -> &'static str {
 fn rocket() -> _ {
     rocket::build().mount("/hello", routes![world])
 }
+
+#[get("/login")]
+fn world() -> &'static str {
+    "login"
+}
