@@ -12,6 +12,6 @@ fn rocket() -> _ {
 }
 
 #[get("/login")]
-fn world() -> &'static str {
+fn login() -> &'static str {
     "login"
 }
