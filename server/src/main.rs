@@ -29,3 +29,7 @@ fn rocket() -> _ {
         .manage(channel::<Message>(1024).0)
         .mount("/hello", routes![world])
 }
+
+fn getMsg(message: str) -> str {
+    return message;
+}
