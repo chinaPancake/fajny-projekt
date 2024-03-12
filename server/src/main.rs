@@ -1,4 +1,3 @@
-// Define structs for messages, users, and rooms
 struct Message {
     sender: String,
     content: String,
@@ -6,29 +5,20 @@ struct Message {
 
 struct User {
     username: String,
-    // Add fields for keys or other cryptographic materials
 }
 
 struct Room {
     name: String,
-    // Maintain a list of users in the room
     users: Vec<User>,
-    // Add other room-related data or functionality
 }
 
 // Functions to handle encryption and decryption
-
-// Functions to handle encryption and decryption
 fn encrypt_message(message: &str, key: &[u8]) -> Vec<u8> {
-    // Placeholder implementation for demonstration purposes
-    // Replace this with your actual encryption logic
     let encrypted_data: Vec<u8> = Vec::new(); // Placeholder, replace with actual encryption
     encrypted_data
 }
 
 fn decrypt_message(encrypted_message: &[u8], key: &[u8]) -> String {
-    // Placeholder implementation for demonstration purposes
-    // Replace this with your actual decryption logic
     let decrypted_data: String = String::from_utf8_lossy(encrypted_message).to_string(); // Placeholder, replace with actual decryption
     decrypted_data
 }
@@ -69,7 +59,7 @@ fn main() {
     // Loop to send and receive messages
     loop {
         // Send a message
-        let message = "Hello, world!";
+        let message = "";
         send_message("room_name", message);
 
         // Receive a message
