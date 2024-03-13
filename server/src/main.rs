@@ -57,6 +57,7 @@ fn main() {
     join_room("room_name");
 
     // Loop to send and receive messages
+    // this comment is for my kernel friend who is very nice person
     loop {
         // Send a message
         let message = "";
