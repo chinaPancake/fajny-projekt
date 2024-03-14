@@ -71,3 +71,5 @@ fn main() {
         );
     }
 }
+
+// i think about quitting rust fck this
